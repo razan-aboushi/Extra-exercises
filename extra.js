@@ -30,12 +30,14 @@ else {
 let v = 7 >= 8;
 console.log(v);
 
-// if (7 >= 8) {
-//   console.log("how is this !!");
-// }
-// else {
-//   console.log("yaaah here is the right place");
-// }
+
+
+if (7 >= 8) {
+  console.log("how is this !!");
+}
+else {
+  console.log("yaaah here is the right place");
+}
 
 
 console.log(Math.ceil(.95));
@@ -81,6 +83,20 @@ else if (parseInt(aa) > parseInt(rr)) {
 }
 else {
   console.log("The values " + rr + " and " + aa + " are equal.");
+}
+
+
+
+// another way to solving 
+let nar1 = 1*prompt("Please ,enter a number");
+let nar2 = 1*prompt("Please , enter another number");
+if (nar1 > n2)
+{
+ alert(nar1 +" is the larger");
+}
+else
+{
+ alert(nar2 +" is the larger"); 
 }
 
 
@@ -139,3 +155,82 @@ switch (razan) {
     console.log("PLEASE TRY AGAIN");
     break;
 }
+
+
+
+
+
+let s = 0;
+while (s <= 5) {
+  alert(s);
+  s++;
+}
+
+
+
+
+let arrt=[];
+
+for(let m=0;m<=5;m++)
+{
+  arrt.push(m);
+}
+alert(arrt);
+
+
+
+
+for(let i=0; i <=20;i++)
+{
+  if (i%3==0)
+  {
+    console.log(i);
+  }
+}
+
+
+
+
+
+while (true) {
+    pro = prompt("please enter a number from 1 to 100");
+    if (pro < 1 || pro > 100) {
+        alert("please re enter the value");
+    }
+    else {
+        alert("Success");
+        break;
+    }
+
+}
+console.log(pro);
+
+
+
+
+let num = prompt("Please , enter a number in the range of 0 to 100");
+
+while (isNaN(num) || num<0 || num>100)
+{
+ alert(num +" is out of range or not a number. Please Try again.");
+
+ num = prompt("Please enter a number in the range of 0 to 100");
+} 
+
+
+
+
+let numint = prompt ("Please enter an integer number");
+let sumn = 0;
+for (let ro =0; ro<=numint; ro++)
+ sumn = sumn + ro; 
+alert("The sum of 0 through "+numint+" is "+sumn); 
+
+
+
+
+let  maxnum = prompt ("Please enter an integer number");
+let sum = 0;
+for (let e=0; e<=maxnum; e++)
+ sum = sum + e; 
+alert("The average of 0 through "+ maxnum +" is "+(sum/(maxnum+1))); 
