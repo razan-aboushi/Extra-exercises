@@ -59,16 +59,31 @@ alert(num3);
 
 
 
-
+//Read in two numbers and display them in ascending order
 let numbb1 = prompt("Enter the first number");
 let numbb2 = prompt("Enter the second number");
 
 if (numbb1 > numbb2) {
-  console.log(numbb1 + " " + numbb2);
+  console.log(numbb2 + " " + numbb1);
 }
 else
-  console.log(numbb2 + " " + numbb1);
+  console.log(numbb1 + " " + numbb1);
 
+
+
+
+
+  //Read in two numbers and display the larger
+let nara1 = prompt("Please, enter a number");
+let nara2 = prompt("Please , enter another number");
+if (nara1 > nara2)
+{
+ alert(nara1 +" is the larger");
+}
+else
+{
+ alert(nara2 +" is the larger"); 
+}
 
 
 
@@ -87,17 +102,6 @@ else {
 
 
 
-// another way to solving 
-let nar1 = 1*prompt("Please ,enter a number");
-let nar2 = 1*prompt("Please , enter another number");
-if (nar1 > n2)
-{
- alert(nar1 +" is the larger");
-}
-else
-{
- alert(nar2 +" is the larger"); 
-}
 
 
 
