@@ -59,6 +59,8 @@ alert(num3);
 
 
 
+
+
 //Read in two numbers and display them in ascending order
 let numbb1 = prompt("Enter the first number");
 let numbb2 = prompt("Enter the second number");
@@ -84,6 +86,7 @@ else
 {
  alert(nara2 +" is the larger"); 
 }
+
 
 
 
@@ -172,7 +175,7 @@ while (s <= 5) {
 
 
 
-
+// Use a loop to display the numbers 0 through 5 in a single alert window
 let arrt=[];
 
 for(let m=0;m<=5;m++)
@@ -182,8 +185,19 @@ for(let m=0;m<=5;m++)
 alert(arrt);
 
 
+//Or we can solve it in this way :
+let ssaa=""; 
+for (let i=0; i<=5; i++)
+{
+  ssaa = ssaa + i + " "; 
+}
+alert(ssaa); 
 
 
+
+
+
+//Use a loop to display the numbers in the range 0…20 that are multiples of 3
 for(let i=0; i <=20;i++)
 {
   if (i%3==0)
@@ -195,7 +209,7 @@ for(let i=0; i <=20;i++)
 
 
 
-
+//Prompt the user for a number in the range 0…100.  If the number is out of range, display an error message and prompt again until a valid number is entered.  Assume the user enters a number each time.
 while (true) {
     pro = prompt("please enter a number from 1 to 100");
     if (pro < 1 || pro > 100) {
@@ -211,6 +225,19 @@ console.log(pro);
 
 
 
+//Or we can solve it in this way :
+let  roro1 = prompt("Please , enter a number in the range of 0 to 100");
+while (roro1<0 || roro1>100)
+{
+ alert(roro1 + " this number is out of range , please try again");
+ roro1= prompt("Please , enter a number in the range of 0 to 100");
+
+} 
+
+
+
+
+//Repeat previous exercise, but this time allow for the possibility that the user enters something that is not accnumber.  Hint: the built in function isNaN(x) returns true if x is not a number.  It returns false if x is a number.  Sort of backwards, but that's what's available.
 
 let num = prompt("Please , enter a number in the range of 0 to 100");
 
@@ -223,15 +250,16 @@ while (isNaN(num) || num<0 || num>100)
 
 
 
-
+// Prompt for an integer, then display the sum of the integers from 0 through the number entered.For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10.
 let numint = prompt ("Please enter an integer number");
-let sumn = 0;
+let sumN = 0;
 for (let ro =0; ro<=numint; ro++)
- sumn = sumn + ro; 
-alert("The sum of 0 through "+numint+" is "+sumn); 
+ sumn = sumN + ro; 
+alert("The sum of 0 through "+numint+" is "+sumN); 
 
 
 
+//Prompt for an integer, then display the average of the integers from 0 through the number entered.For example, if you enter 10, then display 5 which is the average of   (0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)/11.
 
 let  maxnum = prompt ("Please enter an integer number");
 let sum = 0;
